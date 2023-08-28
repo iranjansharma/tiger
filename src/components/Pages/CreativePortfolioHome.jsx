@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import CaseStudy from '../CaseStudy';
 import Cta from '../Cta';
 import Div from '../Div';
@@ -65,17 +65,17 @@ export default function CreativePortfolioHome() {
     <>
       {/* Start Hero Section */}
       <Hero3
-        title="Arino Creative <br />Portfolio"
-        btnLink="contact"
+        title='Arino Creative <br />Portfolio'
+        btnLink='contact'
         btnText={`Let's talk`}
-        socialLinksHeading="Follow Us"
+        socialLinksHeading='Follow Us'
         heroSocialLinks={heroSocialLinks}
-        bgImageUrl="./images/hero_bg_4.jpeg"
+        bgImageUrl='./images/hero_bg_4.jpeg'
       />
       {/* End Hero Section */}
 
       {/* Start Portfolio Section */}
-      <Spacing lg="150" md="80" />
+      <Spacing lg='150' md='80' />
       {portfolioData.map((item, index) =>
         index % 2 === 0 ? (
           <Div key={index}>
@@ -87,7 +87,7 @@ export default function CreativePortfolioHome() {
               imageUrl={item.imageUrl}
               category={item.category}
             />
-            <Spacing lg="100" md="70" />
+            <Spacing lg='100' md='70' />
           </Div>
         ) : (
           <Div key={index}>
@@ -99,34 +99,34 @@ export default function CreativePortfolioHome() {
               imageUrl={item.imageUrl}
               category={item.category}
             />
-            <Spacing lg="100" md="70" />
+            <Spacing lg='100' md='70' />
           </Div>
-        ),
+        )
       )}
       {/* End Portfolio Section */}
 
       {/* Start Case Study Section */}
-      <Spacing lg="45" md="10" />
-      <Div className="container">
+      <Spacing lg='45' md='10' />
+      <Div className='container'>
         <SectionHeading
-          title="Featured case study"
-          subtitle="Case Study"
-          variant="cs-style1 text-center"
+          title='Featured case study'
+          subtitle='Case Study'
+          variant='cs-style1 text-center'
         />
-        <Spacing lg="90" md="45" />
+        <Spacing lg='90' md='45' />
       </Div>
       <CaseStudy
-        title="Analysis lead <br /> more efficiently"
-        bgUrl="/images/case_study_2.jpeg"
-        href="/case-study/case-study-details"
-        variant="cs-style2"
+        title='Analysis lead <br /> more efficiently'
+        bgUrl='/images/case_study_2.jpeg'
+        href='/case-study/case-study-details'
+        variant='cs-style2'
       />
       <CaseStudy
-        title="Ubar food app <br /> case study"
-        bgUrl="/images/case_study_1.jpeg"
-        href="/case-study/case-study-details"
+        title='Ubar food app <br /> case study'
+        bgUrl='/images/case_study_1.jpeg'
+        href='/case-study/case-study-details'
       />
-      <Spacing lg="150" md="80" />
+      <Spacing lg='150' md='80' />
       {/* End Case Study Section */}
 
       {/* Start Testimonial Section */}
@@ -134,25 +134,25 @@ export default function CreativePortfolioHome() {
       {/* End Testimonial Section */}
 
       {/* Start MovingText Section */}
-      <Spacing lg="125" md="70" />
-      <MovingText text="Our reputed world wide partners" />
-      <Spacing lg="105" md="70" />
+      <Spacing lg='125' md='70' />
+      <MovingText text='Our reputed world wide partners' />
+      <Spacing lg='105' md='70' />
       {/* End MovingText Section */}
 
       {/* Start LogoList Section */}
-      <Div className="container">
+      <Div className='container'>
         <LogoList />
       </Div>
-      <Spacing lg="150" md="80" />
+      <Spacing lg='150' md='80' />
       {/* End LogoList Section */}
 
       {/* Start CTA Section */}
-      <Div className="container">
+      <Div className='container'>
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg_3.jpeg"
+          title='Let’s disscuse make <br />something <i>cool</i> together'
+          btnText='Apply For Meeting'
+          btnLink='/contact'
+          bgSrc='/images/cta_bg_3.jpeg'
         />
       </Div>
       {/* End CTA Section */}

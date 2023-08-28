@@ -28,34 +28,34 @@ export default function Header({ variant }) {
           variant ? variant : ''
         } cs-sticky_header ${isSticky ? 'cs-sticky_header_active' : ''}`}
       >
-        <Div className="cs-main_header">
-          <Div className="container">
-            <Div className="cs-main_header_in">
-              <Div className="cs-main_header_left">
-                <Link className="cs-site_branding" to="/">
-                  <img src="/images/logo.svg" alt="Logo" />
+        <Div className='cs-main_header'>
+          <Div className='container'>
+            <Div className='cs-main_header_in'>
+              <Div className='cs-main_header_left'>
+                <Link className='cs-site_branding' to='/'>
+                  <img src='/images/logo.svg' alt='Logo' />
                 </Link>
               </Div>
-              <Div className="cs-main_header_center">
-                <Div className="cs-nav cs-primary_font cs-medium">
+              <Div className='cs-main_header_center'>
+                <Div className='cs-nav cs-primary_font cs-medium'>
                   <ul
-                    className="cs-nav_list"
+                    className='cs-nav_list'
                     style={{ display: `${mobileToggle ? 'block' : 'none'}` }}
                   >
-                    <li className="menu-item-has-children">
-                      <NavLink to="/" onClick={() => setMobileToggle(false)}>
+                    <li className='menu-item-has-children'>
+                      <NavLink to='/' onClick={() => setMobileToggle(false)}>
                         Home
                       </NavLink>
                       <DropDown>
                         <ul>
                           <li>
-                            <Link to="/" onClick={() => setMobileToggle(false)}>
+                            <Link to='/' onClick={() => setMobileToggle(false)}>
                               Main Home
                             </Link>
                           </li>
                           <li>
                             <Link
-                              to="photography-agency"
+                              to='photography-agency'
                               onClick={() => setMobileToggle(false)}
                             >
                               Photography Agency
@@ -63,7 +63,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="creative-portfolio"
+                              to='creative-portfolio'
                               onClick={() => setMobileToggle(false)}
                             >
                               Creative Portfolio
@@ -71,7 +71,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="digital-agency"
+                              to='digital-agency'
                               onClick={() => setMobileToggle(false)}
                             >
                               Digital Agency
@@ -79,7 +79,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="marketing-agency"
+                              to='marketing-agency'
                               onClick={() => setMobileToggle(false)}
                             >
                               Marketing Agency
@@ -87,7 +87,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="showcase-portfolio"
+                              to='showcase-portfolio'
                               onClick={() => setMobileToggle(false)}
                             >
                               Showcase Portfolio
@@ -95,7 +95,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="case-study-showcase"
+                              to='case-study-showcase'
                               onClick={() => setMobileToggle(false)}
                             >
                               Case Study Showcase
@@ -106,15 +106,15 @@ export default function Header({ variant }) {
                     </li>
                     <li>
                       <NavLink
-                        to="about"
+                        to='about'
                         onClick={() => setMobileToggle(false)}
                       >
                         About
                       </NavLink>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li className='menu-item-has-children'>
                       <NavLink
-                        to="service"
+                        to='service'
                         onClick={() => setMobileToggle(false)}
                       >
                         Services
@@ -123,7 +123,7 @@ export default function Header({ variant }) {
                         <ul>
                           <li>
                             <Link
-                              to="service"
+                              to='service'
                               onClick={() => setMobileToggle(false)}
                             >
                               Services
@@ -131,7 +131,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="/service/service-details"
+                              to='/service/service-details'
                               onClick={() => setMobileToggle(false)}
                             >
                               Service Details
@@ -140,9 +140,9 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li className='menu-item-has-children'>
                       <NavLink
-                        to="portfolio"
+                        to='portfolio'
                         onClick={() => setMobileToggle(false)}
                       >
                         Portfolio
@@ -151,7 +151,7 @@ export default function Header({ variant }) {
                         <ul>
                           <li>
                             <Link
-                              to="portfolio"
+                              to='portfolio'
                               onClick={() => setMobileToggle(false)}
                             >
                               Portfolio
@@ -159,7 +159,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="portfolio/portfolio-details"
+                              to='portfolio/portfolio-details'
                               onClick={() => setMobileToggle(false)}
                             >
                               Portfolio Details
@@ -168,15 +168,15 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                    <li className="menu-item-has-children">
-                      <NavLink to="blog" onClick={() => setMobileToggle(false)}>
+                    <li className='menu-item-has-children'>
+                      <NavLink to='blog' onClick={() => setMobileToggle(false)}>
                         Blog
                       </NavLink>
                       <DropDown>
                         <ul>
                           <li>
                             <Link
-                              to="blog"
+                              to='blog'
                               onClick={() => setMobileToggle(false)}
                             >
                               Blog
@@ -184,7 +184,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="blog/blog-details"
+                              to='blog/blog-details'
                               onClick={() => setMobileToggle(false)}
                             >
                               Blog Details
@@ -193,15 +193,15 @@ export default function Header({ variant }) {
                         </ul>
                       </DropDown>
                     </li>
-                    <li className="menu-item-has-children">
-                      <Link to="/" onClick={() => setMobileToggle(false)}>
+                    <li className='menu-item-has-children'>
+                      <Link to='/' onClick={() => setMobileToggle(false)}>
                         Pages
                       </Link>
                       <DropDown>
                         <ul>
                           <li>
                             <Link
-                              to="/contact"
+                              to='/contact'
                               onClick={() => setMobileToggle(false)}
                             >
                               Contact
@@ -209,7 +209,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="/team"
+                              to='/team'
                               onClick={() => setMobileToggle(false)}
                             >
                               Team
@@ -217,7 +217,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="/team/team-details"
+                              to='/team/team-details'
                               onClick={() => setMobileToggle(false)}
                             >
                               Team Details
@@ -225,7 +225,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="/case-study/case-study-details"
+                              to='/case-study/case-study-details'
                               onClick={() => setMobileToggle(false)}
                             >
                               Case Study Details
@@ -233,7 +233,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="/faq"
+                              to='/faq'
                               onClick={() => setMobileToggle(false)}
                             >
                               FAQ
@@ -255,13 +255,13 @@ export default function Header({ variant }) {
                   </span>
                 </Div>
               </Div>
-              <Div className="cs-main_header_right">
-                <Div className="cs-toolbox">
+              <Div className='cs-main_header_right'>
+                <Div className='cs-toolbox'>
                   <span
-                    className="cs-icon_btn"
+                    className='cs-icon_btn'
                     onClick={() => setSideHeaderToggle(!sideHeaderToggle)}
                   >
-                    <span className="cs-icon_btn_in">
+                    <span className='cs-icon_btn_in'>
                       <span />
                       <span />
                       <span />
@@ -281,34 +281,34 @@ export default function Header({ variant }) {
         }
       >
         <button
-          className="cs-close"
+          className='cs-close'
           onClick={() => setSideHeaderToggle(!sideHeaderToggle)}
         />
         <Div
-          className="cs-side_header_overlay"
+          className='cs-side_header_overlay'
           onClick={() => setSideHeaderToggle(!sideHeaderToggle)}
         />
-        <Div className="cs-side_header_in">
-          <Div className="cs-side_header_shape" />
-          <Link className="cs-site_branding" to="/">
-            <img src="/images/footer_logo.svg" alt="Logo" />
+        <Div className='cs-side_header_in'>
+          <Div className='cs-side_header_shape' />
+          <Link className='cs-site_branding' to='/'>
+            <img src='/images/footer_logo.svg' alt='Logo' />
           </Link>
-          <Div className="cs-side_header_box">
-            <h2 className="cs-side_header_heading">
+          <Div className='cs-side_header_box'>
+            <h2 className='cs-side_header_heading'>
               Do you have a project in your <br /> mind? Keep connect us.
             </h2>
           </Div>
-          <Div className="cs-side_header_box">
-            <ContactInfoWidget title="Contact Us" withIcon />
+          <Div className='cs-side_header_box'>
+            <ContactInfoWidget title='Contact Us' withIcon />
           </Div>
-          <Div className="cs-side_header_box">
+          <Div className='cs-side_header_box'>
             <Newsletter
-              title="Subscribe"
-              subtitle="At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit."
-              placeholder="example@gmail.com"
+              title='Subscribe'
+              subtitle='At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.'
+              placeholder='example@gmail.com'
             />
           </Div>
-          <Div className="cs-side_header_box">
+          <Div className='cs-side_header_box'>
             <SocialWidget />
           </Div>
         </Div>
