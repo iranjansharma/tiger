@@ -8,9 +8,9 @@ export default function TeamSlider() {
   /** Team Member Data **/
   const teamData = [
     {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
+      memberImage: '/images/member_1.jpg',
+      memberName: 'Aditya Singh',
+      memberDesignation: 'Cinematographer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -51,17 +51,6 @@ export default function TeamSlider() {
         facebook: '/',
       },
     },
-    {
-      memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
-      memberSocial: {
-        linkedin: '/',
-        twitter: '/',
-        youtube: '/',
-        facebook: '/',
-      },
-    },
   ];
   /** Slider Settings **/
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -70,10 +59,10 @@ export default function TeamSlider() {
       className={
         'slick-prev slick-arrow' + (currentSlide === 0 ? ' slick-disabled' : '')
       }
-      aria-hidden="true"
+      aria-hidden='true'
       aria-disabled={currentSlide === 0 ? true : false}
     >
-      <Icon icon="bi:arrow-left" />
+      <Icon icon='bi:arrow-left' />
     </div>
   );
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
@@ -83,10 +72,10 @@ export default function TeamSlider() {
         'slick-next slick-arrow' +
         (currentSlide === slideCount - 1 ? ' slick-disabled' : '')
       }
-      aria-hidden="true"
+      aria-hidden='true'
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
     >
-      <Icon icon="bi:arrow-right" />
+      <Icon icon='bi:arrow-right' />
     </div>
   );
   const settings = {
@@ -124,7 +113,7 @@ export default function TeamSlider() {
   };
 
   return (
-    <Slider {...settings} className="cs-gap-24 cs-arrow_style2">
+    <Slider {...settings} className='cs-gap-24 cs-arrow_style2'>
       {teamData.map((item, index) => (
         <Div key={index}>
           <Team

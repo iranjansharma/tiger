@@ -12,8 +12,8 @@ export default function TeamPage() {
   const teamData = [
     {
       memberImage: '/images/member_1.jpeg',
-      memberName: 'Melon Bulgery',
-      memberDesignation: 'Product Designer',
+      memberName: 'Aditya Singh',
+      memberDesignation: 'Cinematographer',
       memberSocial: {
         linkedin: '/',
         twitter: '/',
@@ -107,38 +107,38 @@ export default function TeamPage() {
   return (
     <>
       <PageHeading
-        title="Our Team"
-        bgSrc="images/team_hero_bg.jpeg"
-        pageLinkText="Team"
+        title='Our Team'
+        bgSrc='images/team_hero_bg.jpeg'
+        pageLinkText='Team'
       />
-      <Spacing lg="145" md="80" />
-      <Div className="container">
+      <Spacing lg='145' md='80' />
+      <Div className='container'>
         <SectionHeading
-          title="Meet our awesome <br/>team members"
-          subtitle="Our Team"
-          variant="cs-style1 text-center"
+          title='Meet our awesome <br/>team members'
+          subtitle='Our Team'
+          variant='cs-style1 text-center'
         />
-        <Spacing lg="90" md="45" />
-        <Div className="row">
+        <Spacing lg='90' md='45' />
+        <Div className='row'>
           {teamData.map((item, index) => (
-            <Div key={index} className="col-lg-3 col-sm-6">
+            <Div key={index} className='col-lg-3 col-sm-6'>
               <Team
                 memberImage={item.memberImage}
                 memberName={item.memberName}
                 memberDesignation={item.memberDesignation}
                 memberSocial={item.memberSocial}
               />
-              <Spacing lg="80" md="30" />
+              <Spacing lg='80' md='30' />
             </Div>
           ))}
         </Div>
-        <Spacing lg="70" md="50" />
-        <Div className="container">
+        <Spacing lg='70' md='50' />
+        <Div className='container'>
           <Cta
-            title="Let’s disscuse make <br />something <i>cool</i> together"
-            btnText="Apply For Meeting"
-            btnLink="/contact"
-            bgSrc="/images/cta_bg.jpeg"
+            title='Let’s disscuse make <br />something <i>cool</i> together'
+            btnText='Apply For Meeting'
+            btnLink='/contact'
+            bgSrc='/images/cta_bg.jpeg'
           />
         </Div>
       </Div>

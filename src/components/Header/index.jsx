@@ -154,7 +154,7 @@ export default function Header({ variant }) {
                               to='portfolio'
                               onClick={() => setMobileToggle(false)}
                             >
-                              Portfolio
+                              Cinematography
                             </Link>
                           </li>
                           <li>
@@ -162,7 +162,7 @@ export default function Header({ variant }) {
                               to='portfolio/portfolio-details'
                               onClick={() => setMobileToggle(false)}
                             >
-                              Portfolio Details
+                              Photography
                             </Link>
                           </li>
                         </ul>
